@@ -1,0 +1,11 @@
+@charset "utf-8";
+.skyBlue{ padding:3px 5px; background:#318ce8; color:#FFF;}
+.skyOrange{ padding:3px 5px; background:#45BCF9; color:#FFF;}
+#paycenter td{ line-height:26px;}
+
+.ss-button {
+margin: 10px;
+padding: 5px 10px;
+color: #FFF;
+text-decoration: none;
+}

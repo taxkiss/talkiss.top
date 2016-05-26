@@ -1,0 +1,257 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="dns-prefetch" href="//apps.bdimg.com">
+		<meta http-equiv="X-UA-Compatible" content="IE=11,IE=10,IE=9,IE=8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+		<meta name="apple-mobile-web-app-title" content="测试">
+		<meta http-equiv="Cache-Control" content="no-siteapp">
+		<title>justBlog</title>
+		<meta name="keywords" content="某某博客">
+		<meta name="description" content="某某博客">
+		<link rel='stylesheet' href='{$Think.const.CSS_URL}bootstrap.min.css' type='text/css'/>
+		<link rel='stylesheet' href='{$Think.const.CSS_URL}font-awesome.min.css' type='text/css'/>
+		<link rel='stylesheet' id='_main-css' href='{$Think.const.CSS_URL}main.css' type='text/css'/>
+		<link rel="stylesheet" href="{$Think.const.CSS_URL}colorbox.css" type="text/css" />
+		<link rel="stylesheet" href="{$Think.const.CSS_URL}icealipay.css" type="text/css" />
+		<script type='text/javascript' src='{$Think.const.JS_URL}jquery.min1.js'></script>
+		<script src="{$Think.const.JS_URL}jquery.colorbox-min.js"></script>
+		<script src="{$Think.const.JS_URL}main.js"></script>
+		<style>
+			.site-navbar{font-size:16px;} 
+		</style>
+	</head>
+
+	<body class="home blog site-layout-2 wpb-js-composer js-comp-ver-4.4.2 vc_responsive">
+		<header class="header">
+			<div class="container">
+				<h1 class="logo"><a href="#" title="小派头"><img src="{$Think.const.IMG_URL}logo.png">测试</a></h1>
+				<div class="brand">小派头
+					<br>http://www.talkiss.top
+				</div>
+				<ul class="site-nav site-navbar">
+					<li id="menu-item-44" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-44"><a href="{$Think.const.INDEX_URL}main">首页</a>
+					</li>
+					<li id="menu-item-204" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-204"><a href="{$Think.const.SITE_URL}index.php/Home/Message/post"><i class="fa fa-video-camera"></i> 我要发帖</a>
+					</li>
+					<li id="menu-item-47" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-47"><a href="__MODULE__/Blog"><i class="fa fa-file-text-o"></i> 学无止境  </a>
+					</li>
+					<li id="menu-item-250" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-250"><a href="list.html"><i class="fa fa-barcode"></i> 测试导航 <i class="fa fa-angle-down"></i></a>
+						<ul class="sub-menu">
+							<li id="menu-item-368" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-368"><a href="list.html"> 测试导航 </a>
+							</li>
+							<li id="menu-item-251" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-251"><a href="list.html"> 测试导航 </a>
+							</li>
+							<li id="menu-item-290" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-290"><a href="list.html"> 测试导航 </a>
+							</li>
+						</ul>
+					</li>
+					<li id="menu-item-42" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-42"><a href="__MODULE__/Person"><i class="fa fa-external-link"></i> 关于大亮  </a>
+					</li>
+				</ul>
+				<div class="topbar">
+					<ul class="site-nav topmenu">
+						<li class="menusns">
+							<a href="__MODULE__/Self">个人中心 <i class="fa fa-angle-down"></i></a>
+							<ul class="sub-menu">
+								<li><a class="sns-wechat" href="__MODULE__/Self" title="" data-src="{$Think.const.IMG_URL}IMG_0133.jpg"><i class="fa fa-wechat"></i> 个人信息 </a>
+								</li>
+								<li><a target="_blank" rel="external nofollow" href="__MODULE__/Self/update"><i class="fa fa-weibo"></i>修改信息</a>
+								</li>
+								<li><a target="_blank" rel="external nofollow" href="#"><i class="fa fa-tencent-weibo"></i>  我的关注 </a>
+								</li>
+								<li><a target="_blank" href="#"><i class="fa fa-rss"></i>  权限设置 </a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+					<a href="{$Think.const.INDEX_URL}logout" class="signin-loader">安全退出</a> &nbsp; &nbsp; <a href="person.html" class="signup-loader">{$Think.session.username}在线</a> &nbsp; &nbsp; <a href="#">当前IP：{$Think.session.lastip}</a>
+				</div>
+				<i class="fa fa-bars m-icon-nav"></i>
+			</div>
+		</header>
+		<div class="site-search">
+			<div class="container">
+				<form method="get" class="site-search-form">
+					<input class="search-input" name="s" type="text" placeholder="输入关键字" value="">
+					<button class="search-btn" type="submit"><i class="fa fa-search"></i>
+					</button>
+				</form>
+			</div>
+		</div>
+		<section class="container">
+			<div class="content-wrap">
+				<div class="content">
+						<div class="top">
+							<div class="frist">
+								<img class="frist" id="frist" src="{$Think.const.IMG_URL}xy1.png">
+							</div>
+							<div class="second">
+								<img class="second" id="second" src="{$Think.const.IMG_URL}xy3.png">
+							</div>
+							<div class="third">
+								<img class="third" id="third" src="{$Think.const.IMG_URL}xy1.png">
+							</div>
+							<div class="fourth">
+								<img class="fourth" id="fourth" src="{$Think.const.IMG_URL}xy3.png">
+							</div>
+						</div><a class="left carousel-control" href="#" role="button" data-slide="prev"><i class="fa fa-angle-left"></i></a><a class="right carousel-control" href="#" role="button" data-slide="next"><i class="fa fa-angle-right"></i></a>
+					<div class="bottomk">
+					<ul>
+					<li onmouseover="swap('frist')"></li>
+					<li onmouseover="swap('second')"></li>
+					<li onmouseover="swap('third')"></li>
+					<li onmouseover="swap('fourth')"></li>
+					</ul>
+					</div>
+					<article class="excerpt-minic excerpt-minic-index">
+						<h2><a target="_blank" class="red" href="article.html">【近期焦点】</a> <a href="{$Think.const.MESSAGE_URL}article?mesid={$focus['mesid']}" title="测试测试测试测试">{$focus['mestitle']}</a></h2>
+						<p class="note">&nbsp; {$focus['message']|substr=0,500}...</p>
+					</article>
+					<div class="title">
+						<h3>最新发布	</h3>
+						<div class="more"><a href='#'>RainUI</a>
+							<a href='#'>测试VIP</a>
+							<a href='#'>测试导航</a>
+						</div>
+					</div>
+					<!-- 循环显示内容 -->
+					<volist name='info' id='k'>
+					<article class="excerpt excerpt-1">
+						<a target="_blank" class="focus" href="{$Think.const.MESSAGE_URL}article?mesid={$k['mesid']}">
+							<img src="{$Think.const.UPLOAD_URL}{$k['mespicture']}" class="thumb">
+						</a>
+						<header><a class="cat" href="{$Think.const.MESSAGE_URL}article">资料&amp;技术<i></i></a>
+							<h2><a target="_blank" href="{$Think.const.MESSAGE_URL}article?mesid={$k['mesid']}" title="测试测试">{$k['mestitle']}</a></h2>
+						</header>
+						<p class="meta">
+							<time><i class="fa fa-clock-o"></i>{$k['mestime']}</time><span class="pv"><i class="fa fa-eye"></i>阅读({$k['mesread']})</span>
+						</p>
+						<p class="note">{$k['message']|substr=0,500}</p>
+					</article>
+					</volist>
+					{$pagelist}
+				</div>
+			</div>
+			<aside class="sidebar">
+				<div class="widget widget-tops">
+					<ul class="widget-nav">
+						<li class="active">网站公告</li>
+						<li>会员中心</li>
+					</ul>
+					<ul class="widget-navcontent">
+						<li class="item item-01 active">
+							<ul>
+								<li>
+									<time>03-11</time><a target="_blank" href="#">测试数据测试数据测试数据</a>
+								</li>
+							</ul>
+						</li>
+						<li class="item item-02">
+							<h4>需要登录才能进入会员中心</h4>
+							<p>
+								<a href="#" class="btn btn-primary signin-loader">立即登录</a>
+								<a href="#" class="btn btn-default signup-loader">现在注册</a>
+							</p>
+						</li>
+					</ul>
+				</div>
+				<div class="widget widget_ui_themes">
+					<h3>博客主题<h3><div class="item">
+					<ul class="ebox">
+						<li class="ebox-i ebox-01">
+
+							<h4>博客主题</h4>
+
+							<p>测试测试测试测试测试测试测试测试测试测试</p>
+
+							<a class="btn btn-primary btn-sm" target="_blank" href="#">专题</a>
+
+							<a class="btn btn-default btn-sm" target="_blank" href="#">查看演示</a>
+
+						</li>
+
+						<li class="ebox-i ebox-02">
+
+							<h4>测试测试</h4>
+
+							<p>测试测试测试测试测试测试测试测试测试测试测试测试</p>
+
+							<a class="btn btn-primary btn-sm" target="_blank" href="#">专题</a>
+
+							<a class="btn btn-default btn-sm" target="_blank" href="#">查看演示</a>
+
+						</li>
+						<li class="ebox-i ebox-100">
+							<h4>DUX2.0主题(破解版)</h4>
+							<p>测试测试测试测试测试测试</p>
+							<a class="btn btn-danger btn-sm" target="_blank" href="#">主题下载</a>
+							<!-- <a class="btn btn-default btn-sm" href="#">咨询排期</a> -->
+						</li>
+
+					</ul>
+
+					</div></div>
+					<div class="widget widget_ui_fronts">
+					<h3>源码展示<h3>
+					<div class="item"><ul class="ebox">
+						<li class="ebox-i ebox-01">
+
+							<h4>测试测试</h4>
+
+							<p>测试测试测试测试测试测试测试测试</p>
+
+							<a class="btn btn-default btn-sm" target="_blank" href="#">立即预览</a>
+
+						</li>
+						<li class="ebox-i ebox-01">
+							<h4>测试测试</h4>
+							<p>测试测试测试测试测试测试测试测试</p>
+							<a class="btn btn-default btn-sm" target="_blank" href="#">立即预览</a>
+						</li>
+						<li class="ebox-i ebox-05 ebox-100">
+							<h4>测试测试工具箱</h4>
+							<p>
+								<a target="_blank" href="#">测试测试</a> | 
+								<a target="_blank" href="#">测试测试</a> | 
+								<a target="_blank" href="#">测试测试</a>
+							</p>
+							<a class="btn btn-default btn-sm" target="_blank" href="#">立即预览</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+				<div class="widget widget_ui_posts">
+					<h3>热门文章</h3>
+					<ul class="nopic">
+						<li><a target="_blank" href="#"><span class="text">数据测试数据测试数据测试数据测试</span><span class="muted">2015-04-17</span><span class="muted">评论(3)</span></a>
+						</li>
+					</ul>
+				</div>
+				<div class="widget widget_ui_tags">
+					<h3>标签云</h3>
+					<div class="items"><a href="#">大前端 (6)</a><a href="#">wordpress (4)</a>
+					</div>
+				</div>
+			</aside>
+		</section>
+		<style>
+			.btn-lg, .btn-group-lg > .btn {
+			    font-size: 12px;
+			    border-radius: 4px;
+			    padding: 5px 35px;
+			}
+		</style>
+		<div class="branding branding-black">
+			<div class="container">
+				<h2>测试-专注IT技术分享！</h2>
+				<a target="blank" class="btn btn-lg" href="#">关于我们</a><a target="blank" class="btn btn-lg" href="#">联系我们</a> </div>
+		</div>
+		<footer class="footer">
+			<div class="container">
+				<p>&copy; 2016 <a href="#">测试</a> &nbsp; <a href='#'>网站地图</a><a>|</a><a>京ICP备123456789号-1</a>
+				</p>
+			</div>
+		</footer>
+	</body>
+</html>

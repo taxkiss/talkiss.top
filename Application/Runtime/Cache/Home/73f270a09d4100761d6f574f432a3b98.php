@@ -1,0 +1,229 @@
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="dns-prefetch" href="//apps.bdimg.com">
+		<meta http-equiv="X-UA-Compatible" content="IE=11,IE=10,IE=9,IE=8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+		<meta name="apple-mobile-web-app-title" content="测试">
+		<meta http-equiv="Cache-Control" content="no-siteapp">
+		<title>某某博客</title>
+		<meta name="keywords" content="某某博客">
+		<meta name="description" content="某某博客">
+		<link rel='stylesheet' href='<?php echo (CSS_URL); ?>bootstrap.min.css' type='text/css'/>
+		<link rel='stylesheet' href='<?php echo (CSS_URL); ?>font-awesome.min.css' type='text/css'/>
+		<link rel='stylesheet' id='_main-css' href='<?php echo (CSS_URL); ?>main.css' type='text/css'/>
+		<link rel="stylesheet" href="<?php echo (CSS_URL); ?>colorbox.css" type="text/css" />
+		<link rel="stylesheet" href="<?php echo (CSS_URL); ?>icealipay.css" type="text/css" />
+		<link rel="stylesheet" href="<?php echo (CSS_URL); ?>article.css" type="text/css" />
+		<script type='text/javascript' src='<?php echo (JS_URL); ?>jquery.min.js'></script>
+		<script src="<?php echo (JS_URL); ?>jquery.colorbox-min.js"></script>
+		<style type="text/css">
+			.content {
+			    padding: 0px 20px;
+			    background-color: #FFF;
+			    border: 1px solid #EAEAEA;
+			    border-radius: 4px;
+			}
+			.site-navbar{font-size:16px;}
+		</style>
+	</head>
+
+	<body class="home blog site-layout-2 wpb-js-composer js-comp-ver-4.4.2 vc_responsive">
+		<header class="header">
+			<div class="container">
+				<h1 class="logo"><a href="" title="小派头"><img src="<?php echo (IMG_URL); ?>logo.png">测试</a></h1>
+				<div class="brand">小派头
+					<br>http://www.talkiss.top
+				</div>
+				<ul class="site-nav site-navbar">
+					<li id="menu-item-44" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-44"><a href="<?php echo (INDEX_URL); ?>main">首页</a>
+					</li>
+					<li id="menu-item-204" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-204"><a href="<?php echo (MESSAGE_URL); ?>post"><i class="fa fa-video-camera"></i>我要发帖</a>
+					</li>
+					<li id="menu-item-47" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-47"><a href="/ProJ/ccblog/index.php/Home/Blog"><i class="fa fa-file-text-o"></i> 学无止境 </a>
+					</li>
+					<li id="menu-item-250" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-250"><a href="list.html"><i class="fa fa-barcode"></i> 测试导航 <i class="fa fa-angle-down"></i></a>
+						<ul class="sub-menu">
+							<li id="menu-item-368" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-368"><a href="list.html"> 测试导航 </a>
+							</li>
+							<li id="menu-item-251" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-251"><a href="list.html"> 测试导航 </a>
+							</li>
+							<li id="menu-item-290" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-290"><a href="list.html"> 测试导航 </a>
+							</li>
+						</ul>
+					</li>
+					<li id="menu-item-42" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-42"><a href="list.html"><i class="fa fa-external-link"></i>  测试导航 </a>
+					</li>
+					<li class="navto-search"><a href="#" class="search-show active"><i class="fa fa-search"></i></a>
+					</li>
+				</ul>
+				<div class="topbar">
+					<ul class="site-nav topmenu">
+						<li class="menusns">
+							<a href="#">关注本站 <i class="fa fa-angle-down"></i></a>
+							<ul class="sub-menu">
+								<li><a class="sns-wechat" href="#" title="" data-src="Images/IMG_0133.jpg"><i class="fa fa-wechat"></i>  测试导航 </a>
+								</li>
+								<li><a target="_blank" rel="external nofollow" href="#"><i class="fa fa-weibo"></i>  测试导航 </a>
+								</li>
+								<li><a target="_blank" rel="external nofollow" href="#"><i class="fa fa-tencent-weibo"></i>  测试导航 </a>
+								</li>
+								<li><a target="_blank" href="#"><i class="fa fa-rss"></i>  测试导航 </a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+					<a href="<?php echo (INDEX_URL); ?>logout" class="signin-loader">安全退出</a> &nbsp; &nbsp; <a href="person.html" class="signup-loader"><?php echo $_SESSION['username']."在线";?></a> &nbsp; &nbsp; <a href="#">当前IP：<?php echo ($date["lastip"]); ?></a>
+				</div>
+				<i class="fa fa-bars m-icon-nav"></i>
+			</div>
+		</header>
+		<div class="site-search">
+			<div class="container">
+				<form method="get" class="site-search-form">
+					<input class="search-input" name="s" type="text" placeholder="输入关键字" value="">
+					<button class="search-btn" type="submit"><i class="fa fa-search"></i>
+					</button>
+				</form>
+			</div>
+		</div>
+		<section class="container">
+			<div class="content-wrap">
+				<div class="content">
+					<header class="article-header">
+						<h1 class="article-title"><a href="#"><?php echo ($info['mestitle']); ?></a></h1>
+						<div class="article-meta">
+						    <?php cookie('reademail',$_SESSION['useremail'],86400);?><!-- 保存浏览者的痕迹，保准浏览量的正确 -->
+							<?php cookie('mesid',$_SESSION['mesid'],86400);?>
+							<span class="item"><?php echo ($info['mestime']); ?></span>
+							<span class="item">分类：<a href="#" rel="category tag"><?php echo ($info['mesort']); ?></a></span>
+							<span class="item post-views">阅读(<?php echo ($info['mesread']); ?>)</span>
+							<span class="item">评论(<?php echo (count($comments)); ?>)</span>
+							<span class="item"></span>
+						</div>
+					</header>
+					<article class="article-content">
+						<p>
+							<a href="#">
+								<img class="alignnone size-full wp-image-420" style="max-width:400px;" src="<?php echo (UPLOAD_URL); echo ($info["mespicture"]); ?>">
+							</a>
+						</p>
+						<p>&nbsp;</p>
+						
+						<p><?php echo ($info['message']); ?></p>
+					</article>
+					<div class="action-share bdsharebuttonbox bdshare-button-style0-24" data-bd-bind="1459270965022">
+						分享到：
+						<a class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a>
+						<a class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+						<a class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+						<a class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"></a>
+						<a class="bds_sqq" data-cmd="sqq" title="分享到QQ好友"></a>
+						<a class="bds_bdhome" data-cmd="bdhome" title="分享到百度新首页"></a>
+						<a class="bds_tqf" data-cmd="tqf" title="分享到腾讯朋友"></a>
+						<a class="bds_renren" data-cmd="renren" title="分享到人人网"></a>
+						<a class="bds_diandian" data-cmd="diandian" title="分享到点点网"></a>
+						<a class="bds_youdao" data-cmd="youdao" title="分享到有道云笔记"></a>
+						<a class="bds_ty" data-cmd="ty" title="分享到天涯社区"></a>
+						<a class="bds_kaixin001" data-cmd="kaixin001" title="分享到开心网"></a>
+						<a class="bds_taobao" data-cmd="taobao"></a>
+						<a class="bds_douban" data-cmd="douban" title="分享到豆瓣网"></a>
+						<a class="bds_fbook" data-cmd="fbook" title="分享到Facebook"></a>
+						<a class="bds_twi" data-cmd="twi" title="分享到Twitter"></a>
+						<a class="bds_mail" data-cmd="mail" title="分享到邮件分享"></a>
+						<a class="bds_copy" data-cmd="copy" title="分享到复制网址"></a><a class="bds_more" data-cmd="more">更多</a> (<a class="bds_count" data-cmd="count" title="累计分享0次">0</a>) </div>
+					<div class="article-tags">标签：<a href="#" rel="tag">iphone</a><a href="#" rel="tag">iPhone6S</a><a href="#" rel="tag">iPhone7</a>
+					</div>
+					<div class="pads">
+						<ul id="tags_related">
+							<li> </li>
+						</ul>
+					</div>
+					<div class="relates">
+						<div class="title">
+							<h3>相关推荐</h3>
+						</div>
+						<ul>
+							<li><a href="article.html">测试数据测试数据测试数据测试数据测试数据测试数据测试数据</a>
+							</li>
+						</ul>
+					</div>
+					<div class="title" id="comments">
+						<h3>评论 <small>抢沙发</small></h3></div>
+
+<script type="text/javascript">
+function submit(){
+	document.getElementById('comment').submit();
+}
+</script>
+
+					<form action="/ProJ/ccblog/index.php/Home/Message/comment" method="post" class="smart-green">
+						<h1>
+							侃侃而谈 <span>嘿~~留下就是你的态度</span>
+						</h1>
+						<label> <span>Message :</span> 
+						<textarea id="message" name="comment" placeholder="Your Message to Us"></textarea>
+						</label>
+						<label> <span>&nbsp;</span> <input type="button" class="button" value="Send" onClick="submit()"/>
+						</label>
+					</form>
+<!-- ********显示评论 -->
+<?php if(is_array($comments)): $i = 0; $__LIST__ = $comments;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$val): $mod = ($i % 2 );++$i;?><div class="comment-div">
+	<section class="comments">
+		<article class="comment">
+			<a class="comment-img" href="#non"> <img
+				src="http://lorempixum.com/50/50/people/7" alt="" width="50"
+				height="50">
+			</a>
+			<div class="comment-body">
+				<div class="text">
+					<p><?php echo ($val["comment"]); ?></p>
+				</div>
+				<p class="attribution">
+					by <a href="#non"><?php echo ($val["cusername"]); ?></a> at <?php echo ($val["ctime"]); ?>
+				</p>
+			</div>
+		</article>
+	</section>
+</div><?php endforeach; endif; else: echo "" ;endif; ?>
+					<div id="respond" class="no_webshot">
+						<div class="comment-signarea">
+							<h3 class="text-muted">评论前必须登录！</h3>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<aside class="sidebar">
+				<div class="widget widget_ui_posts">
+					<h3>最新发布</h3>
+					<ul>
+						<li><a target="_blank" href="#"><span class="thumbnail"><img data-src="Images/5672312129115-1-220x114.jpg" class="thumb" src="Images/5672312129115-1-220x114.jpg" style="display: block;"></span><span class="text">前端程序员的15个jQuery小技巧</span><span class="muted">2016-01-20</span><span class="muted">评论()</span></a>
+						</li>
+					</ul>
+				</div>
+
+			</aside>
+		</section>
+		<style>
+			.btn-lg, .btn-group-lg > .btn {
+			    font-size: 12px;
+			    border-radius: 4px;
+			    padding: 5px 35px;
+			}
+		</style>
+		<div class="branding branding-black">
+			<div class="container">
+				<h2>专注IT技术分享！</h2>
+				<a target="blank" class="btn btn-lg" href="#">关于我们</a><a target="blank" class="btn btn-lg" href="#">联系我们</a> </div>
+		</div>
+		<footer class="footer">
+			<div class="container">
+				<p>&copy; 2016 <a href="#">talkiss</a> &nbsp; <a href='#'>网站地图</a><a>|</a><a>京ICP备123456789号-1</a>
+				</p>
+			</div>
+		</footer>
+	</body>
+
+</html>
